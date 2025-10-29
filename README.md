@@ -1,7 +1,4 @@
 
-
-
-```
 #  Wine Classification Demo (FastAPI + Streamlit)
 
 This lab is part of a Streamlit Lab exercise.
@@ -10,7 +7,6 @@ It combines FastAPI as the backend inference service with Streamlit as the inter
 The goal is to classify wines into one of three cultivars — Barolo, Grignolino, or Barbera using 13 measurable chemical properties (like alcohol content, phenols, and color intensity).
 
 The lab demonstrates how a trained scikit-learn model can be served via FastAPI and seamlessly integrated into a Streamlit interface for real-time predictions.
----
 
 ## Project Structure
 
@@ -35,11 +31,10 @@ project_root/
 
 ```
 
----
-
 ##  Installation & Setup
 
 ### 1️⃣ Clone the repo
+
 ```
 git clone https://github.com/BESWATHI/Lab04_Streamlit_lab
 cd wine-classification-demo
@@ -67,8 +62,6 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
----
-
 ## Running the App
 
 ### Step 1. Train the Model
@@ -81,8 +74,6 @@ python train.py
 ```
 
 This creates `wine_model.pkl` under `FastAPI_Labs/model/`.
-
----
 
 ### Step 2. Start FastAPI Backend
 
@@ -97,7 +88,6 @@ Endpoints:
 * `GET /` → health check
 * `POST /predict` → takes JSON input and returns wine class name
 
----
 
 ### Step 3. Start Streamlit Frontend
 
@@ -112,7 +102,6 @@ streamlit run Dashboard.py
 
 Streamlit runs at **[http://localhost:8501](http://localhost:8501)**
 
----
 
 ##  Sample JSON Input
 
@@ -136,8 +125,6 @@ Save this as `test.json` (already included):
 }
 ```
 
----
-
 ## ✅ Expected Output
 
 When you upload `test.json` and click **Predict**, you’ll see:
@@ -152,8 +139,6 @@ When you upload `test.json` and click **Predict**, you’ll see:
 and Streamlit will display
 
 > **Prediction: Barolo**
-
----
 
 ## 📸 Preview
 
