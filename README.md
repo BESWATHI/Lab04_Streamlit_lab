@@ -1,8 +1,8 @@
 
 
 
-```markdown
-# 🍷 Wine Classification Demo (FastAPI + Streamlit)
+```
+#  Wine Classification Demo (FastAPI + Streamlit)
 
 This lab is part of a Streamlit Lab exercise.
 It combines FastAPI as the backend inference service with Streamlit as the interactive frontend dashboard.
@@ -33,25 +33,31 @@ project_root/
 │
 └── requirements.txt
 
-````
+```
 
 ---
 
 ##  Installation & Setup
 
 ### 1️⃣ Clone the repo
-```bash
-git clone https://github.com/<your-username>/wine-classification-demo.git
+```
+git clone https://github.com/BESWATHI/Lab04_Streamlit_lab
 cd wine-classification-demo
-````
+```
 
 ### 2️⃣ Create and activate a virtual environment
 
 ```
 python -m venv venv
+
+```
 # Mac/Linux
+```
 source venv/bin/activate
+
+```
 # Windows
+```
 venv\Scripts\activate
 ```
 
@@ -69,6 +75,8 @@ pip install -r requirements.txt
 
 ```
 cd FastAPI_Labs/src
+```
+```
 python train.py
 ```
 
@@ -97,6 +105,8 @@ Open another terminal:
 
 ```
 cd ../../Streamlit_Labs/src
+```
+```
 streamlit run Dashboard.py
 ```
 
@@ -108,7 +118,7 @@ Streamlit runs at **[http://localhost:8501](http://localhost:8501)**
 
 Save this as `test.json` (already included):
 
-```json
+```
 {
     "alcohol": 13.2,
     "malic_acid": 2.3,
@@ -132,7 +142,7 @@ Save this as `test.json` (already included):
 
 When you upload `test.json` and click **Predict**, you’ll see:
 
-```json
+```
 {
   "predicted_class": 0,
   "predicted_label": "Barolo"
