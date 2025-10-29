@@ -15,7 +15,6 @@ The lab demonstrates how a trained scikit-learn model can be served via FastAPI 
 ## Project Structure
 
 ```
-
 project_root/
 │
 ├── FastAPI_Labs/
